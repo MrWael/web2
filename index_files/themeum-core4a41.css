@@ -1,0 +1,327 @@
+/*
+* Plugin Name: Themeum Core
+* Plugin URI: http://www.themeum.com/item/core
+* Author: Themeum
+* Author URI: http://www.themeum.com
+* License - GNU/GPL V2 or Later
+* Description: Themeum Core is a required plugin for this theme.
+* Version: 1.0
+*/
+
+
+/* ---------------------------------- */
+/* ------Celebrity Single Page------- */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* ------Responsive------- */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 470.98px) {
+    .item .movie-poster .item-responsive{
+        height: 180px;
+        max-width: 100%;
+    }
+    .item-responsive{
+        width:10%;padding-right:0px;padding-left:0px
+    }
+    .movie-featured .movie-item-responsive{
+        width:45%;padding-right:0px;padding-left:0px
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+}
+@media (min-width: 471px) and (max-width: 575.98px) {
+    .item .movie-poster .item-responsive{
+        height: 180px;
+        max-width: 100%;
+    }
+    .item-responsive{
+        width:10%;padding-right:0px;padding-left:0px
+    }
+    .movie-featured .movie-item-responsive{
+        width:30%;padding-right:0px;padding-left:0px
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 675.98px) {
+    .item .movie-poster .item-responsive{
+        height: 180px;
+        max-width: 100%;
+    }
+    .item-responsive{
+        width:10%;padding-right:0px;padding-left:0px
+    }
+    .movie-featured .movie-item-responsive{
+        width:25%;padding-right:0px;padding-left:0px
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+}
+@media (min-width: 676px) and (max-width: 767.98px) {
+    .movie-featured .movie-item-responsive{
+        width:20%;padding-right:0px;padding-left:0px
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+}
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .item .movie-poster .item-responsive{
+        height: 180px;
+        max-width: 100%;
+    }
+    .movie-featured .movie-item-responsive{
+        width:20%;padding-right:0px;padding-left:0px
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .item .movie-poster .item-responsive{
+        height: 200px;
+        max-width: 100%;
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 20%;
+    }
+    .movie-featured .movie-item-responsive{
+        width:12%;
+        padding-right:0px;
+        padding-left:0px;
+    }
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+    .item .movie-poster .item-responsive{
+        height: 223px;
+        max-width: 100%;
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 15%;
+    }
+    .movie-featured .movie-item-responsive{
+        width:12%;
+        padding-right:0px;
+        padding-left:0px;
+    }
+}
+@media (min-width: 1600px){
+    .movie-featured .movie-item-responsive{
+        width:12%;padding-right:0px;padding-left:0px
+    }
+}
+@media (min-width: 1750px) {
+    .item .movie-poster .item-responsive{
+        height: 250px;
+        max-width: 100%;
+    }
+    .item .movie-details .moview-rating-summary img.parentalResponsive{
+        width: 15%;
+    }
+    .movie-featured .movie-item-responsive{
+        width:10%;padding-right:0px;padding-left:0px
+    }
+}
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* ------Featured Movie------- */
+/* ---------------------------------- */
+
+
+.movie-featured .item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden !important;
+    margin: 0 10px 25px ;
+}
+.movie-featured .item:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.movie-featured .item:hover {
+    /*cursor: url(../images/cursor.png),auto;*/
+}
+
+.item .movie-poster {
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.item .play-icon {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-40%) scale(0);
+    transform: translate(-50%,-40%) scale(0);
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    z-index: 10;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    overflow: hidden;
+}
+
+.item:hover .play-icon {
+    -webkit-transform: translate(-50%,-40%) scale(1);
+    transform: translate(-50%,-40%) scale(1);
+    text-decoration: none;
+}
+
+.movie-featured .item .movie-details {
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.31) 26%, rgba(0,0,0,0.46) 39%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.31) 26%,rgba(0,0,0,0.46) 39%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.31)26%,rgba(0,0,0,0.46) 39%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#75000000',GradientType=0 );
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 2;
+color: #fff;
+padding: 12px;
+-webkit-transition: all .3s;
+transition: all .3s;
+-webkit-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+font-weight: 400;
+}
+.movie-featured .item:hover .watchLaterBtnV2{
+    visibility: visible;
+  opacity: 1;
+}
+.movie-featured .item:hover .movie-details {
+    bottom: 0;
+}
+
+.movie-featured .item .movie-details .cast a {
+    margin-right: 5px;
+}
+
+.moview-rating {
+    font-size: 19px;
+}
+
+.moview-rating span.star {
+    font-family: 'moview';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    color: #ffc000;
+}
+
+.moview-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.moview-rating span.star:before {
+    content: "\e927";
+    padding-right: 5px;
+}
+
+.moview-rating-summary {
+    font-size: 14px;
+}
+.movie-details .movie-title {
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.movie-details .movie-title a {
+    color: #fff;
+}
+
+.single.single-movie .logged-in-as {
+    margin: 0 15px 0px;
+}
+
+.single.single-movie .comment-form-rating-error label{
+    font-weight: 500;
+}
+
+.moview-details {
+    margin-top: 30px;
+}
+
+.movie-details .tag {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.movie-details .cast {
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s;
+    overflow: hidden;
+    /* height: 48px; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+	margin-bottom: 12px;
+
+}
+
+.movie-details .cast span {
+    font-weight: 400;
+}
+
+.movie-featured .item .movie-details a {
+    color: #fff;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+.movie-featured .item:hover .movie-details .cast {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+.movie-featured .item .movie-poster img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+}
+.movie-featured .item:hover .movie-poster img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: .5;
+}
+
+
