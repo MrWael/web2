@@ -1,0 +1,27 @@
+
+.featuredItemsFlag
+ {	position: absolute;
+    width: 0;
+	height: 0;
+	border-top: 80px solid #d84747;
+	border-right: 80px solid transparent;
+	z-index:10;
+	top:0px;
+	left:0px;
+ }
+
+  .featuredItemsFlagButton {
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid #d84747;
+	border-left: 80px solid transparent;
+	position: absolute;
+	z-index:10;
+	bottom:0px;
+	right:0px;
+}
+
+.shadowLight
+{
+ text-shadow: 2px 2px 4px #DE6565;	
+}

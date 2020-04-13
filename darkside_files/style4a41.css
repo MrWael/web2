@@ -1,0 +1,71 @@
+/*
+Theme Name: Moview
+Theme URI: http://themeum.com/wordpress/moview
+Author: Themeum
+Author URI: http://themeum.com/
+Description: Moview Premium Magazine Theme.
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, green, pink, purple, dark, right-sidebar, two-columns, responsive-layout
+Text Domain: moview
+*/
+
+
+@import url('styleImport/nanoscroller.css');
+@import url('styleImport/flexslider.css');
+@import url('styleImport/themeum-moview-font.css');
+
+@import url('styleImport/prettyPhoto.css');
+@import url('styleImport/responsive.css');
+
+
+#mailchimp-id{ display:none; }
+
+.btn-yellow .acton-btn:hover {
+    background-color: #B8BF25;
+}
+.btn-yellow .acton-btn {
+    color: #000;
+    background-color: #cbd504;
+    padding: 13px 28px;
+    border-radius: 3px;
+    font-weight: 400;
+    margin-top: 20px;
+    display: inline-block;
+}
+.themeum-clients {
+    background-color: #ecedee;
+    padding: 70px 30px 30px 30px;
+}
+.client-image {
+    display: block;
+    float: right;
+    top: -100px;
+    position: relative;
+}
+.client-image img {
+    width: 60px;
+}
+.client-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #2a303b;
+}
+h4.speaker-title, .speaker-designation {
+    text-align: left;
+    color: #424242;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+.video-js .vjs-control-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    padding: 0 20px;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)),to(rgba(0,0,0,0.65)));
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+    bottom: 2.5em;
+}
+.vjs-volume-bar.vjs-slider-horizontal {
+    width: 5em;
+    height: 2.2em !important;
+}
+.video-js .vjs-progress-control{
+    height: 42px;
+}
+.video-js .vjs-load-progress{
+    background: rgba(115, 133, 159, 0.5);
+}
+.vjs-icon-play:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before{
+    content: "\f115";
+}
+.vjs-icon-play, .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder {
+    font-family: Flaticon;
+    font-weight: normal;
+    font-style: normal;
+}
+.vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before {
+    content: "\f113";
+}
+.vjs-icon-pause, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder {
+    font-family: Flaticon;
+    font-weight: normal;
+    font-style: normal;
+}
+.vjs-icon-volume-mute:before, .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before {
+    content: "\f19b";
+}
+.vjs-icon-volume-mute, .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder {
+    font-family: Flaticon;
+    font-weight: normal;
+    font-style: normal;
+}
+.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before {
+    content: "\f19c";
+}
+.vjs-icon-volume-high, .video-js .vjs-mute-control .vjs-icon-placeholder {
+    font-family: Flaticon;
+    font-weight: normal;
+    font-style: normal;
+}
+.vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
+    content: "\f12d";
+}
+.vjs-icon-fullscreen-enter, .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+    font-family: Flaticon;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vjs-icon-captions:before, .video-js .vjs-captions-button .vjs-icon-placeholder:before, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before {
+    content: "\f10c";
+}
+.vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before {
+    content: "\f132";
+}
+.vjs-icon-fullscreen-exit, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder {
+    font-family: FlatIcon;
+    font-weight: normal;
+    font-style: normal;
+}
+.video-js .vjs-slider {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0.45em 0 0.45em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: rgba(115, 133, 159, 0.5);
+
+    user-select: none;
+}
+.vjs-volume-control  .vjs-slider {
+    background: none !important;
+}
+.video-js .vjs-play-progress {
+    background-color: #e11e25;
+}
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+    overflow: hidden;
+}
+.vjs-button > .vjs-icon-placeholder:before {
+    font-size: 1.8em;
+    line-height: 2.5;
+}
+.video-js .vjs-time-control {
+    line-height: 4em;
+}
+.video-js .vjs-text-track-display {
+    overflow: hidden !important;
+}
+@media (min-width: 700px) 
+{    
+    .video-js .vjs-text-track-display > div > div > div{ 
+        font-size: 1.4em !important;
+    }
+
+
+}
+
+.video-js .vjs-text-track-display > div > div > div{ 
+    font-size: 0.7em;
+    text-align: center;
+    margin-bottom: 0.1em;
+    /* Transparent black background, or fallback to all black (oldIE) */
+    background:transparent !important;
+    text-shadow: 1px 1px 2px #000000;
+	display: inline-block !important;   
+}
+.vjs-menu li{
+    text-transform: capitalize;
+}
+.vjs-subs-caps-button.vjs-menu-button-popup .vjs-menu{
+ width: 11em !important;
+}
+.vjs-default-skin .vjs-ass-button:before{
+    font-size: 20px;
+}
+.video-js .vjs-tech { 
+    outline: 0;
+  }
